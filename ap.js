@@ -38,7 +38,22 @@
 // console.log('Element at index 3 is '+ fruits[3]);
 // console.log('Element at index 4 is '+ fruits[4]);
 // ------------------------------------------------------------------------------------------
-
+// ques no 6
+// 6. Write a program to initialize an array of N items by using 
+// prompt. Where N is number of items as entered by the user
+// ans 
+//  let array = [];
+//  let numberOfItems = +prompt('enter number of items');
+//  let value0 = prompt('enter value for index 0');
+//  array.push(value0);
+//  let value1 = prompt('enter value for index 1');
+//  array.push(value1);
+//  let value2 = prompt('enter value for index 2');
+//  array.push(value2);
+//  let value3 = prompt('enter value for index 3');
+//  array.push(value3);
+//  console.log(array)
+//  for(let i = 0; i < 4; i++){console.log(array[i])}
 // ==============================================================================
 // 7. Generate the following series in your browser. See example 
 // output. 
@@ -60,6 +75,7 @@
 
 // for(var i = 2; i<=20; i++){if(i % 2 === 0){console.log(i+'k')}}
 // --------------------------------------------------------------------------
+// ques no 8
 //  You have an array 
 // A = [“cake”, “apple pie”, “cookie”, “chips”, “patties”] 
 // Write a program to enable “search by user input” in an array. 
@@ -77,9 +93,25 @@
 // if(flag){console.log(search,'is available')}
 // else{console.log(search,'is not available')}
 // =========================================================================================
-// 
+// ques no 12
+//12. Write a program to print multiples of 5 ranging 1 to 100
+// ans 
+// for(let i = 5; i <= 100; i = i + 5){console.log(i)}
+// ___________________________________________________________________________________________
+// // 13. You have given the following arrays:
+// var students = ["Ali", "Sami", "Taha", "Inam"];
+// var scores = [58, 73, 89, 90]
+// ans 
+ let students = ['Ali','Sami','Taha','Inam'];
+ let scroes = [58,73,89,90];
+ let result = [];
+ for (let i = 0; i < students.length; i++){
+    for(let j = 0 ; j <= i; j++){
+        result.push(students[i] + ' ' + scroes[i])
+    }
 
-
+ }
+ console.log(result)
 
 
 // ----------------------------------------------------------------------------
@@ -90,17 +122,93 @@
 // E.g. if user gives 3 as input value print 12, 45, 3 
 // if user gives 34 as input value print 12, 45, 3, 22, 34
 // ans 
-// let scores  = [12, 45, 3, 22, 34, 50]; 
-// let stopValue = prompt('enter stop value');
-// for(var i = 0; i < scores.length; i++){var ind = scores.indexOf();
-//     console.log(ind)
-// }
+//  let scores  = [12, 45, 3, 22, 34, 50]; 
+//  let stopValue = +prompt('enter stop value');
+//  for(var i = 0; i < scores.length; i++){if(scores[i] === stopValue){console.log(scores[i])}}
+ 
 // --------------------------------------------------------------------------------
 // 15. You have an array 
 // A = [ [1,2,3] , [4,5,6] , [7,8,9] ] 
 // Write each element on new line with the help of nested for 
 // loops.
-let a = [[1,2,3],[4,5,6],[7,8,9]];
-for(var i = 0; i< a.length; i++){console.log('i',a[i])
-    for(j = 0;j< i; j++){console.log('j',a[i])}
-}
+// let a = [[1,2,3],[4,5,6],[7,8,9]];
+// for(var i = 0; i< a.length; i++){
+//     for(j = 0;j < a[i].length; j++){console.log(a[i][j])}
+// }
+// -----------------------------------------------------------------
+// ques no 16
+//  Write a program to repeatedly print the value of the variable 
+// num which is input by user. Value should be decreasing by 0.5 
+// each time, as long as x Value remains positive.
+// ans 
+// let num = +prompt('enter num');
+// for(var i = num; i >= 0; i -= 0.5){console.log(i)}
+// ------------------------------------------------------------------------------
+// 17. The even/odd reporter 
+// Write a for loop that will iterate from 0 to 20. For each 
+// iteration, it will check if the current number is even or odd, and 
+// report that to the screen (e.g. "2 is even").
+// ans 
+// for(var i = 0; i <= 20; i++){if(i % 2 === 0){console.log(i,'is even')}
+// else{console.log(i,'is odd')}}
+// ======================================================================================
+// 18. Write a program to calculate the product of the odd integers 
+// from 1 to 7. 
+// ans 
+// let product = 1;
+// for(var i = 1; i<=7;i++){if(i %2 !== 0){product = product * i}}
+// console.log(product)
+// """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+// 19. Write a program that will write out a wedge of stars. The user 
+// will enter the initial number of stars, and the program will write 
+// out lines of stars where each line has one few star than the 
+// previous line. Initial number of stars: 7 
+// ******* 
+// ****** 
+// ***** 
+// **** 
+// *** 
+// ** 
+// *   
+// ans 
+// for(let i = 7; i > 0; i--){str = '';
+//     for(let j = 1; j <= i; j++){str = str + "*";
+
+//     }
+//     console.log(str)
+// }
+// 20. Write a program to create the following patterns in your 
+// browser. Take number of lines as an input. 
+// a.
+//  ***** 
+// ***** 
+// ***** 
+// ***** 
+// b.
+//  * 
+// ** 
+// *** 
+// **** 
+// ***** 
+// c.
+//  ***** 
+// **** 
+// *** 
+// ** 
+// *
+// ans 
+// a 
+// for(let i = 1; i <= 5;i++){str = '';
+//     for(let j= 1; j <= 5; j++){let str = str + "*";}
+//     console.log(str)
+// }
+// b 
+// for(let i = 1; i <=5; i++){let str = '';
+//     for(let j = 1; j <= i; j++){str = str + "*"}
+//     console.log(str)
+// }
+// c
+// for(let i = 5; i >0; i --){let str = '';
+//     for(let j = 1; j <= i; j++){str = str + '*';}
+//     console.log(str)
+// }
