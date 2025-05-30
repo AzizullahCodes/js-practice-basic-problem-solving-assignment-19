@@ -14,29 +14,29 @@
 // using for loop. Table number & length should be taken as an 
 // input from user
 // ans 
-//  let enter_Number = +prompt('enter a number');
-//  let limit = +prompt('enter limit for printing table');
-//  console.log('The tabe of ' + enter_Number+':')
-//  for(var i = 1; i <= limit; i++){console.log(i * enter_Number)}
+  let enter_Number = +prompt('enter a number');
+  let limit = +prompt('enter limit for printing table');
+  console.log('The tabe of ' + enter_Number+':')
+  for(var i = 1; i <= limit; i++){console.log(i * enter_Number)}
 //  ===========================================================================================
 // 4. You have an array 
 // A = [“Nokia”, “Samsung”, “Apple”, “Sony”, “Huawei”] 
 // Write each element on new line with the help of for loop.
 // ans 
-// let array = ['Nokia','Samsung','Apple','Sony','Huawei'];
-// for(var i = 0; i < array.length; i++){console.log(array[i])}
+ let array = ['Nokia','Samsung','Apple','Sony','Huawei'];
+ for(var i = 0; i < array.length; i++){console.log(array[i])}
 // --------------------------------------------------------------------------------
 // 5. Write a program to print items of the following array using for 
 // loop: 
 // fruits = [“apple”, “banana”, “mango”, “orange”, “strawberry”];
 // ans 
-// let  fruits = ['apple','banana','mango','orange','strawberry'];
-// for(var i = 0; i < fruits.length; i++){console.log(fruits[i])}
-// console.log('Element at index 0 is '+ fruits[0]);
-// console.log('Element at index 1 is '+ fruits[1]);
-// console.log('Element at index 2 is '+ fruits[2]);
-// console.log('Element at index 3 is '+ fruits[3]);
-// console.log('Element at index 4 is '+ fruits[4]);
+ let  fruits = ['apple','banana','mango','orange','strawberry'];
+ for(var i = 0; i < fruits.length; i++){console.log(fruits[i])}
+ console.log('Element at index 0 is '+ fruits[0]);
+ console.log('Element at index 1 is '+ fruits[1]);
+ console.log('Element at index 2 is '+ fruits[2]);
+ console.log('Element at index 3 is '+ fruits[3]);
+ console.log('Element at index 4 is '+ fruits[4]);
 // ------------------------------------------------------------------------------------------
 // ques no 6
 // 6. Write a program to initialize an array of N items by using 
@@ -102,16 +102,16 @@
 // var students = ["Ali", "Sami", "Taha", "Inam"];
 // var scores = [58, 73, 89, 90]
 // ans 
- let students = ['Ali','Sami','Taha','Inam'];
- let scroes = [58,73,89,90];
- let result = [];
- for (let i = 0; i < students.length; i++){
-    for(let j = 0 ; j <= i; j++){
-        result.push(students[i] + ' ' + scroes[i])
-    }
+//  let students = ['Ali','Sami','Taha','Inam'];
+//  let scroes = [58,73,89,90];
+//  let result = [];
+//  for (let i = 0; i < students.length; i++){
+//     for(let j = 0 ; j <= i; j++){
+//         result.push(students[i] + ' ' + scroes[i])
+//     }
 
- }
- console.log(result)
+//  }
+//  console.log(result)
 
 
 // ----------------------------------------------------------------------------
@@ -122,10 +122,16 @@
 // E.g. if user gives 3 as input value print 12, 45, 3 
 // if user gives 34 as input value print 12, 45, 3, 22, 34
 // ans 
-//  let scores  = [12, 45, 3, 22, 34, 50]; 
-//  let stopValue = +prompt('enter stop value');
-//  for(var i = 0; i < scores.length; i++){if(scores[i] === stopValue){console.log(scores[i])}}
- 
+// let scores = [12, 45, 3, 22, 34, 50];
+// let stopValue = +prompt('Enter stop value');
+
+// for (let i = 0; i < scores.length; i++) {
+//     console.log(scores[i]);
+//     if (scores[i] === stopValue) {
+//         break; // Stop the loop when stop value is found
+//     }
+// }
+
 // --------------------------------------------------------------------------------
 // 15. You have an array 
 // A = [ [1,2,3] , [4,5,6] , [7,8,9] ] 
